@@ -1,2 +1,3 @@
-# Simple-Div-example
-Examples for Div tag which is used in css
+# CSS
+CSS codes for better understanding
+
