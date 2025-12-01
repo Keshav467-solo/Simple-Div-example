@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Form Validation</title>
+  <style>
+    .error { color: red; font-size: 32px; }
+    .success { color: green; font-weight: bold; }
+    label { display:block; margin-top:8px; }
+  </style>
+</head>
+<body>
+
+<h3>Simple Form Validation (JS)</h3>
+
+<form onsubmit="return validateForm()">
+  <!-- Name (required) -->
+  <label>
+    Name:
+    <input type="text" id="name">
+  </label>
+  <span id="nameErr" class="error"></span>
+
+  <!-- Email (format check) -->
+  <label>
+    Email:
+    <input type="text" id="email">
+  </label>
+  <span id="emailErr" class="error"></span>
+
+  <!-- Password + Confirm (match) -->
+  <label>
+    Password:
+    <input type="password" id="password">
+  </label>
+  <span id="passErr" class="error"></span>
+
+  <label>
+    Confirm Password:
+    <input type="password" id="confirmPassword">
+  </label>
+  <span id="confirmErr" class="error"></span>
+
+  <!-- Age (number range) -->
+  <label>
+    Age (18 - 60):
+    <input type="number" id="age">
+  </label>
+  <span id="ageErr" class="error"></span>
+
+  <br><br>
+  <input type="submit" value="Submit">
+  <p id="result" class="success"></p>
+</form>
